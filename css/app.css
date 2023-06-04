@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap");
+body {
+  font-family: "Sora", sans-serif;
+}
+
+.announcement-bar {
+  color: #262644;
+  font-weight: 600;
+  background: linear-gradient(51deg, rgb(255, 232, 240) 4%, rgb(220, 243, 254) 42%, rgb(208, 255, 247) 92%);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.main-navbar {
+  background-color: #fff !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  box-shadow: 0px 10px 20px 0px rgba(20, 20, 20, 0.13);
+  height: 72px;
+}
+.main-navbar .full-length-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.main-navbar .navbar-brand {
+  margin-bottom: 10px;
+}
+.main-navbar .navbar-left {
+  display: flex;
+  align-items: center;
+}
+.main-navbar .navbar-right .navbar-nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.main-navbar .navbar-right .navbar-nav a:hover {
+  font-weight: 600;
+  color: #0600F4;
+}/*# sourceMappingURL=app.css.map */
