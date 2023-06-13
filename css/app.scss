@@ -5,7 +5,13 @@ $dark: #010112;
 
 body{
     font-family: 'Sora', sans-serif;
+    color: $dark;
+    cursor: url("../images/cursor.png");
 }
+a{
+    text-decoration: none !important;
+}
+.btn{}
 .announcement-bar{
     color: #262644;
     font-weight: 600;
@@ -48,6 +54,195 @@ body{
                 color: $primary-clr;
             }
             }
+        }
+    }
+}
+
+
+.hero-section{
+    background: $dark;
+    background-image: url("../images/hero-bg.svg");
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .hero-search-form{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 20px;
+        .search-input{
+
+        }
+    }
+    .hero-content{
+       display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        
+        .content-center{
+           
+        }
+    }
+    h1{
+        font-size: 38px;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    p{
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    .suggested-list{
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+        .caption{
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+        }
+        a{
+            font-size: 14px;
+            font-weight: 400;
+            color: #fff;
+        }
+    }
+}
+
+.features{
+    padding: 60px;
+   h3{
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+   } 
+   p{
+    font-size: 14px;
+    text-align: center;
+   }
+}
+
+.statistics{
+    background: #F8F8F8;
+    padding: 60px;
+        
+      
+        .c-info-block {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      
+        .c-title {
+            font-size: 26px;
+            font-weight: 700;
+        }
+      
+        .c-stats {
+          display: flex;
+          justify-content: space-between;
+          width: 30vw;
+      
+          .c-stat-list {
+            .c-count {
+              font-size: 48px;
+              font-weight: 600;
+            }
+      
+            .c-label {
+              color: #7B7B7B;
+              font-size: 20px;
+            }
+          }
+        } 
+}
+
+.donate{
+    padding: 100px;
+    p{
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .donate-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.subscription{ 
+ 
+    .subscription-block{
+        padding: 100px;
+        border: 1px solid #B4B4B4;
+        h3{
+            font-size: 34px;
+            font-weight: 700;
+            text-align: center;
+        }
+        p{
+            font-size: 14px;
+            text-align: center;
+        }
+    //     &::after{
+    //         background-color: $primary-clr;
+    //         border: .5px solid rgba(0,0,0,.25);
+    //         box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    //         content: "";
+    //         display: block;
+    //         height: .5rem;
+    //         position: absolute;
+    //         width: .5rem;
+    //         right: -0.25rem;
+    //         top: -0.25rem;
+           
+    //     }
+    //     &::before{
+    //         background-color: $primary-clr;
+    // border: 0.5px solid rgba(0,0,0,.25);
+    // box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    // content: "";
+    // display: block;
+    // height: 0.5rem;
+    // position: absolute;
+    // width: 0.5rem;
+    // left: -0.25rem;
+    // top: -0.25rem;
+    //     }
+       
+    }
+    .subscripe-form{
+        .form-control{
+            padding: 1.375rem 1.75rem;
+        }
+        .btn-primary{
+            min-width: 84px;
+            svg{
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+.request{
+    background-color: #E8E8F5;
+    padding: 100px 80px;
+    h3{font-size: 28px;
+        color: #8E8E8E;
+        a{
+            color: $dark;
+            text-decoration: underline !important;
         }
     }
 }
