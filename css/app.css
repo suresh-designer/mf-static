@@ -13,6 +13,12 @@ a {
   background-color: #0600F4;
 }
 
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid #0600F4;
+  font-weight: 600;
+}
+
 .announcement-bar {
   color: #262644;
   font-weight: 600;
@@ -22,6 +28,13 @@ a {
   padding: 10px 10px;
   text-align: center;
   font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.announcement-bar img {
+  width: 24px;
+  margin: 0px 10px;
 }
 
 .main-navbar {
@@ -163,9 +176,17 @@ a {
   align-items: center;
 }
 
+.subscription {
+  padding: 100px 0;
+}
 .subscription .subscription-block {
+  background-image: url("../images/pattern3.svg");
   padding: 100px;
   border: 1px solid #B4B4B4;
+  min-height: 74vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .subscription .subscription-block h3 {
   font-size: 34px;
@@ -316,4 +337,56 @@ a {
   font-size: 24px;
   font-weight: 700;
   text-align: center;
+}
+
+.footer {
+  padding: 100px 0;
+  border-bottom: 1px solid #DBDBDB;
+}
+.footer h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.footer p {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+.footer .footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .social-medias {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.footer .footer-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer .footer-nav a {
+  color: #656565;
+  padding: 6px 16px;
+  border-radius: 100px;
+}
+.footer .footer-nav a:hover {
+  background: rgba(4, 0, 244, 0.0588235294);
+  color: #0600f4;
+}
+.footer .footer-nav a:hover .free-nav-icon {
+  width: 24px;
+}
+.footer .footer-nav a .free-nav-icon {
+  width: 20px;
+}
+
+.copyright {
+  text-align: center;
+  padding: 40px;
 }/*# sourceMappingURL=app.css.map */
