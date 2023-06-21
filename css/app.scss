@@ -110,11 +110,14 @@ a {
     }
 
     h1 {
-        font-size: 38px;
+        font-size: 46px;
         color: #fff;
         font-weight: bold;
         text-align: center;
         margin-bottom: 20px;
+        background: linear-gradient(180deg, #fff, #858585);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     p {
@@ -439,7 +442,7 @@ a {
 }
 
 .footer {
-    padding: 100px 0;
+    padding: 100px 0 40px 0;
     border-bottom: 1px solid #DBDBDB;
 
     h3 {
@@ -498,4 +501,66 @@ a {
 .copyright {
     text-align: center;
     padding: 40px;
+}
+.donate-button{
+    background-color: #FEDE65;
+    border: 1px solid #a28514;
+    min-width: max-content;
+    border-radius: 38px;
+    padding: 0px 40px;
+    // min-height: 200px;
+    overflow: hidden;
+    height: 170px;
+    cursor: pointer;
+    margin-top: 60px;
+}
+.donate-btn-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .donate-image{
+        display: flex;
+        align-items: self-end;
+        justify-content: space-between;
+        flex-direction: column;
+        .d-top-img{
+            
+        img{
+            transform: translate(10px, -26px);
+            width: 100px;
+        }
+        
+    }
+    .d-bottom-img{
+        img{
+            width: 66px;
+            transform: translate(10px, -20px);
+        }
+    }
+    }
+    .pre-text{
+        font-size: 48px;
+        font-weight: 700;
+        margin-right: 30px;
+        margin-top: -50px;
+    }
+    .post-text{
+        font-size: 48px;
+        font-weight: 700;
+        margin-left: 30px;
+        margin-top: -50px;
+    }
+
+    &:hover{
+        .d-top-img{
+            img{
+                transform: translate(10px, -10px) 
+            }
+        }
+        .d-bottom-img{
+            img{
+                transform: translate(10px, -10px) 
+            }
+        }
+    }
 }
