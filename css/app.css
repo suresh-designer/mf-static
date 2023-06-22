@@ -411,6 +411,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #b4982c;
+}
+.donate-btn-block:hover {
+  color: #010112;
 }
 .donate-btn-block .donate-image {
   display: flex;
@@ -443,4 +447,12 @@ a {
 }
 .donate-btn-block:hover .d-bottom-img img {
   transform: translate(10px, -10px);
+}
+
+.home-icon-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  justify-content: center;
+  margin: 90px 10px -20px 10px;
 }/*# sourceMappingURL=app.css.map */

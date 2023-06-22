@@ -518,6 +518,10 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #b4982c;
+    &:hover{
+        color: $dark;
+    }
     .donate-image{
         display: flex;
         align-items: self-end;
@@ -543,6 +547,7 @@ a {
         font-weight: 700;
         margin-right: 30px;
         margin-top: -50px;
+        
     }
     .post-text{
         font-size: 48px;
@@ -563,4 +568,12 @@ a {
             }
         }
     }
+}
+
+.home-icon-container{
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    justify-content: center;
+    margin: 90px 10px -20px 10px;
 }
