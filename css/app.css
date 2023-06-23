@@ -455,4 +455,213 @@ a {
   gap: 10px;
   justify-content: center;
   margin: 90px 10px -20px 10px;
+}
+
+.input-elevated {
+  font-size: 16px;
+  line-height: 1.5;
+  border: none;
+  background: #FFFFFF;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M11 2C15.968 2 20 6.032 20 11C20 15.968 15.968 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2ZM11 18C14.8675 18 18 14.8675 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18ZM19.4853 18.0711L22.3137 20.8995L20.8995 22.3137L18.0711 19.4853L19.4853 18.0711Z'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+  background-size: 20px 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 300px;
+  padding: 0.5em 1em 0.5em 2.5em;
+}
+
+.input-elevated::-moz-placeholder {
+  color: #838D99;
+}
+
+.input-elevated::placeholder {
+  color: #838D99;
+}
+
+.input-elevated:focus {
+  outline: none;
+}
+
+.app-page .app-container {
+  padding: 0;
+}
+
+.app-viewer {
+  display: flex;
+}
+.app-viewer .app-left-area {
+  max-width: 300px;
+  min-width: 300px;
+  border-right: 1px solid #D9D9D9;
+}
+.app-viewer .app-left-area .left-filter {
+  padding: 20px;
+}
+.app-viewer .app-left-area .left-filter .filter-button {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #010112;
+}
+.app-viewer .app-left-area .left-filter .filter-button:hover {
+  background-color: #f5f5f5;
+}
+.app-viewer .app-left-area .left-filter .filter-button.selected {
+  background-color: #0600F4;
+  color: #fff;
+}
+.app-viewer .app-left-area .left-filter .filter-title {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.app-viewer .app-left-area .left-filter .filters {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 6px;
+}
+.app-viewer .app-left-area .left-filter .filters .category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.app-viewer .app-left-area .left-filter .filters .category-list .categories-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  font-size: 14px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 6px 10px 6px 10px;
+  border-radius: 6px;
+  color: #010112;
+  border: 1px solid #aeaeae;
+  cursor: pointer;
+}
+.app-viewer .app-left-area .left-filter .filters .category-list .categories-item:hover {
+  background-color: #0600F4;
+  color: #fff;
+}
+.app-viewer .app-left-area .left-filter .filters .category-list .c-selected {
+  display: flex;
+  align-items: center;
+  background: #0600F4;
+  font-size: 14px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 6px 6px 6px 10px;
+  border-radius: 6px;
+  color: #fff;
+}
+.app-viewer .app-left-area .left-filter .filters .category-list .c-selected span {
+  margin-right: 10px;
+}
+.app-viewer .app-left-area .left-filter .filters .category-list .c-selected .category-close {
+  width: 14px;
+  height: 14px;
+  fill: #fff;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.app-viewer .app-left-area .filter-divider {
+  height: 10px;
+  border-bottom: 1px solid #9b9b9b;
+  margin-bottom: 20px;
+}
+.app-viewer .app-right-area .icons-grid-container {
+  display: grid;
+  cursor: pointer;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+.app-viewer .app-right-area .icons-grid-container .icon-holder {
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: transparent #D9D9D9 #D9D9D9 transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.app-viewer .app-right-area .icons-grid-container .icon-holder:hover {
+  border: 1.5px solid #0600F4;
+}
+.app-viewer .app-right-area .icons-grid-container .icon-holder:hover::before {
+  background-color: #fff;
+  border: 0.5px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  content: "";
+  display: block;
+  height: 0.5rem;
+  position: absolute;
+  width: 0.5rem;
+  left: -0.25rem;
+  top: -0.25rem;
+}
+.app-viewer .app-right-area .icons-grid-container .icon-holder:hover::after {
+  background-color: #fff;
+  border: 0.5px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  content: "";
+  display: block;
+  height: 0.5rem;
+  position: absolute;
+  width: 0.5rem;
+  right: -0.25rem;
+  top: -0.25rem;
+}
+.app-viewer .app-right-area .icons-grid-container .icon-holder svg {
+  width: 36px;
+  height: 36px;
+  max-height: 36px;
+  max-width: 36px;
+  min-height: 36px;
+  min-width: 36px;
+}
+.app-viewer .app-right-area .icons-grid-container .icon-subholder {
+  min-height: 100px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.app-viewer .app-right-area .icons-grid-container .icon-subholder:hover svg {
+  width: 56px;
+  height: 56px;
+  max-height: 56px;
+  max-width: 56px;
+  min-height: 56px;
+  min-width: 56px;
+}
+.app-viewer .app-right-area .icons-grid-container .icon-subholder:hover::after {
+  background-color: #fff;
+  border: 0.5px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  content: "";
+  display: block;
+  height: 0.5rem;
+  position: absolute;
+  width: 0.5rem;
+  z-index: 10;
+  bottom: -0.25rem;
+  right: -0.25rem;
+}
+.app-viewer .app-right-area .icons-grid-container .icon-subholder:hover::before {
+  background-color: #fff;
+  border: 0.5px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  content: "";
+  display: block;
+  height: 0.5rem;
+  position: absolute;
+  width: 0.5rem;
+  z-index: 10;
+  bottom: -0.25rem;
+  left: -0.25rem;
 }/*# sourceMappingURL=app.css.map */
