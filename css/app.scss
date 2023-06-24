@@ -50,6 +50,10 @@ a {
     padding: 0px 12px;
     box-shadow: 0px 10px 20px 0px rgba(20, 20, 20, 0.13);
     height: 72px;
+    position: sticky;
+    width: 100%;
+    z-index: 999;
+    top: 0px;
 
     .nav-item {}
 
@@ -641,9 +645,13 @@ a {
         max-width: 300px;
         min-width: 300px;
         border-right: 1px solid #D9D9D9;
-
+        height: calc(100vh - 20px);
+        overflow-y: auto;
+        position: sticky;
+        top: 74px;
         .left-filter {
             padding: 20px;
+
 
             .filter-button {
                 background-color: #fff;
@@ -841,6 +849,99 @@ a {
                         z-index: 10;
                         bottom: -0.25rem;
                         left: -0.25rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//Icon viewer
+.icon-view-modal{
+    .viewer-close{
+        background: #0000008c;
+    color: #fff;
+    position: absolute;
+    border: none;
+    right: -60px;
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+    display: grid;
+    place-items: center;
+    }
+    .modal-body{
+        padding: 0;
+    }
+
+    .icon-viewer-area{
+        .icon-top-row{
+            display: flex;
+          
+            .iv-left{
+                width: 60%;
+                display: flex; 
+                padding: 60px 30px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                .iv-icon-holder{
+                    .iv-safe-zone{
+                        background: #fff;
+                        border-radius: 20px;
+                        height: 220px;
+                        width: 220px;
+                        border: 1px solid #EAEAEA;
+                        display: grid;
+                        place-items: center;
+                        svg{
+                            width: 120px;
+                            height: 120px;
+                        }
+                    }
+                }
+                .iv-icon-type{
+                    display: flex;
+                    background-color: #F5F5F5;
+                    margin: 28px 0px;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-radius: 20px;
+                    .iv-category{
+                        cursor: pointer;
+                        padding: 12px 18px;
+                        &.selected{
+                            color: $primary-clr;
+                            border-radius: 20px;
+                            background: #EAEAEA;
+                           // padding: 12px 18px;
+                        }
+                    }
+                }
+            }
+            .iv-right{
+                width: 40%;
+                border-left: 1px solid #D9D9D9;
+                background: #FBFBFB;
+                padding: 20px;
+                .downloaded{
+                    display: flex;
+                    align-items: center;
+                    background-color: #EEEEEE;
+                    border-radius: 6px;
+                    padding: 6px 12px;
+                    max-width: fit-content;
+                    gap: 8px;
+                    float: right;
+                    svg{
+                        width: 18px;
+                        height: 18px;
+                    }
+                    .download-count{
+                        font-size: 16px;
+                        font-weight: bold;
                     }
                 }
             }
