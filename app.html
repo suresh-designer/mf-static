@@ -32,11 +32,9 @@
 
             </div>
             <div class="navbar-right">
-
                 <ul class="navbar-nav">
-
                     <li class="nav-item">
-                        <a class="nav-link" href="#">App</a>
+                        <a class="nav-link" href="app.html">App</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
@@ -46,6 +44,25 @@
                     </li>
                 </ul>
 
+                <div class="dropdown">
+                    <button class="mobile-menu dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 18V20H5V18H16ZM21 11V13H3V11H21ZM19 4V6H8V4H19Z"></path></svg>
+                    </button>
+                    <div class="mobile-menu-card dropdown-menu dropdown-menu-end">
+                        <ul class="navbar-nav">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="app.html">App</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">What's new</a>
+                            </li>
+                        </ul>
+                      </div>
+                  </div>
             </div>
 
         </div>
@@ -4129,54 +4146,130 @@
         </div>
 
     </section>
-    <div class="modal fade icon-view-modal" id="icon-viewer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade icon-view-modal" id="icon-viewer" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <button type="button" class="viewer-close" data-bs-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z" fill="rgba(255,255,255,1)"></path></svg></button>
-            <div class="modal-body">
-               <div class="icon-viewer-area">
-                <div class="icon-top-row">
-                    <div class="iv-left">
-                        <div class="iv-icon-holder">
-                            <div class="iv-safe-zone">
-                                <div class="iv-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" height="48" width="48">
-                                        <path fill="#ffffff" d="M37.793 37.794c-9.002 9.003-23.245 9.57-32.908 1.703-1.137-.926-1.246-2.565-.316-3.699 2.141-2.61 6.701-7.856 15.037-16.192C27.94 11.271 33.187 6.712 35.797 4.57c1.134-.93 2.773-.821 3.7.316 7.866 9.663 7.299 23.906-1.704 32.908Z">
-                                        </path>
-                                        <path fill="#f9596d" d="M33.046 6.904c-2.968 2.591-7.39 6.652-13.44 12.702S9.496 30.078 6.904 33.046A18.45 18.45 0 0 0 20.5 39C30.717 39 39 30.717 39 20.5a18.45 18.45 0 0 0-5.954-13.596Z">
-                                        </path>
-                                        <path stroke="#3e3e3e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M37.794 37.794c-9.002 9.003-23.245 9.57-32.908 1.703-1.138-.926-1.247-2.565-.317-3.699 2.142-2.61 6.702-7.856 15.037-16.192C27.941 11.271 33.188 6.712 35.798 4.57c1.133-.93 2.773-.821 3.699.316 7.867 9.663 7.3 23.906-1.703 32.908Z">
-                                        </path>
-                                        <path stroke="#3e3e3e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M33.047 6.904A18.45 18.45 0 0 1 39 20.5C39 30.717 30.717 39 20.5 39a18.45 18.45 0 0 1-13.595-5.954">
-                                        </path>
-                                        <path stroke="#3e3e3e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m29 28 1 1"></path>
-                                        <path stroke="#3e3e3e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m30.467 17.693.933.934"></path>
-                                        <path stroke="#3e3e3e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m18.07 30.09.934.933"></path>
-                                    </svg>
+            <div class="modal-content">
+                <button type="button" class="viewer-close" data-bs-dismiss="modal" aria-label="Close"><svg
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                        <path
+                            d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z"
+                            fill="rgba(255,255,255,1)"></path>
+                    </svg></button>
+                <div class="modal-body">
+                    <div class="icon-viewer-area">
+                        <div class="icon-top-row">
+                            <div class="iv-left">
+                                <div class="iv-icon-holder">
+                                    <div class="iv-safe-zone">
+                                        <div class="iv-icon">
+                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><style>@keyframes rotate{0%{transform:rotateZ(0)}to{transform:rotateZ(360deg)}}</style><path stroke="#0A0A30" stroke-width="1.5" d="M10.524 4.614a2 2 0 012.952 0l.459.502a2 2 0 001.565.648l.68-.03a2 2 0 012.087 2.087l-.03.68a2 2 0 00.648 1.564l.501.46a2 2 0 010 2.95l-.502.46a2 2 0 00-.648 1.565l.03.68a2 2 0 01-2.086 2.087l-.68-.03a2 2 0 00-1.565.648l-.46.501a2 2 0 01-2.95 0l-.46-.502a2 2 0 00-1.565-.648l-.68.03a2 2 0 01-2.087-2.086l.03-.68a2 2 0 00-.647-1.565l-.502-.46a2 2 0 010-2.95l.502-.46A2 2 0 005.764 8.5l-.03-.68A2 2 0 017.82 5.734l.68.03a2 2 0 001.564-.647l.46-.502z" style="animation:rotate 2s linear both infinite;transform-origin:center center"/><path stroke="#265BFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.873 10.004l-3.746 3.992"/><circle cx="10.127" cy="10.004" r="1.074" fill="#265BFF"/><circle cx="13.873" cy="13.995" r="1.074" fill="#265BFF"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="iv-icon-type">
+                                    <div class="iv-category">Line</div>
+                                    <div class="iv-category selected">Regular</div>
+                                    <div class="iv-category">Filled</div>
+                                    <div class="iv-category">Duocolor</div>
                                 </div>
                             </div>
-                           
+                            <div class="iv-right">
+                                <div class="iv-top-info">
+                                    <div class="download-right">
+                                <div class="downloaded">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path
+                                            d="M16.5 3C19.5376 3 22 5.5 22 9C22 16 14.5 20 12 21.5C9.5 20 2 16 2 9C2 5.5 4.5 3 7.5 3C9.35997 3 11 4 12 5C13 4 14.64 3 16.5 3Z">
+                                        </path>
+                                    </svg>
+                                    <div class="download-count">15k</div>
+                                </div>
+                            </div>
+                                <div class="iv-icon-info">
+                                    <h6 class="category-name">
+                                        Category Name
+                                    </h6>
+                                    <h2 class="icon-name">Icon Name</h2>
+                                    <div class="icon-tags">
+                                        <p class="tag-item">ui</p> 
+                                        <p class="tag-item">user interface</p> 
+                                        <p class="tag-item">animation</p> 
+                                        <p class="tag-item">fruits</p> 
+                                    </div>
+                                </div>
+                                
+                            </div>
+                                <div class="icon-editor">
+                                    <div class="editor-size">
+                                        <p class="editor-label">Icon Size</p>
+                                        <div class="icon-size-list">
+                                            <div class="icon-size">
+                                                24px
+                                            </div>
+                                            <div class="icon-size">
+                                                32px
+                                            </div>
+                                            <div class="icon-size selected">
+                                                48px
+                                            </div>
+                                            <div class="icon-size">
+                                                100px
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="editor-color">
+                                        <p class="editor-label">Color</p>
+                                        <div class="icon-color-list">
+                                            <div class="icon-color blue"></div>
+                                            <div class="icon-color black"></div>
+                                            <div class="icon-color red"></div>
+                                            <div class="icon-color purple selected"></div>
+                                            <div class="icon-color green"></div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="iv-icon-type">
-                            <div class="iv-category">Line</div>
-                            <div class="iv-category selected">Regular</div>
-                            <div class="iv-category">Filled</div>
-                            <div class="iv-category">Duocolor</div>
+                        <div class="icon-download-option">
+                            <div class="caption">Download options</div>
+                            <div class="d-buttons-row">
+                                <button class="btn btn-download">Copy SVG</button>
+                                <button class="btn btn-download">Download SVG</button>
+                                <button class="btn btn-download">Copy Link</button>
+                                <button class="btn btn-download">
+                                    Share                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="iv-right">
-                        <div class="downloaded">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.5 3C19.5376 3 22 5.5 22 9C22 16 14.5 20 12 21.5C9.5 20 2 16 2 9C2 5.5 4.5 3 7.5 3C9.35997 3 11 4 12 5C13 4 14.64 3 16.5 3Z"></path></svg>
-                            <div class="download-count">15k</div>
+                        <div class="promotion-block">
+                            <div class="p-left">
+                                <div class="p-icon">
+                                    <img src="images/promotion-icon.svg" alt="">
+                                </div>
+                                <div class="product-info">
+                                    <h6>Promote your product here!</h6>
+                                    <p>Reach a highly skilled group of 15.000 top-level creatives.</p>
+                                </div>
+                            </div>
+                            <div class="p-right">
+                                <div class="product-link">
+                                    <a href="#">Know More</a>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="contact-block">
+                            <h6>Contact us</h6>
+                            <p>We listen to you. Have you had any issues or suggestions about our Monkeyframes? Our support team will help you.</p>
                         </div>
                     </div>
                 </div>
-               </div>
+
             </div>
-             
-          </div>
         </div>
-      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
